@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+        "charliermarsh.ruff",
+        "davidanson.vscode-markdownlint",
+        "editorconfig.editorconfig",
+        "github.vscode-github-actions",
+        "ms-python.python",
+        "ms-python.mypy-type-checker",
+        "njpwerner.autodocstring",
+        "tamasfe.even-better-toml",
+        "timonwong.shellcheck",
+        "yzhang.markdown-all-in-one"
+    ]
+}

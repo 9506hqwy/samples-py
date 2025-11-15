@@ -1,0 +1,14 @@
+services:
+  app:
+    image: mcr.microsoft.com/devcontainers/python:3.12-trixie
+    tty: true
+    ports:
+      - "8000:8000"
+  postgres:
+    image: postgres:17
+    tty: true
+    environment:
+      POSTGRES_USER: dev
+      POSTGRES_PASSWORD: dev
+    ports:
+      - "5432:5432"

@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Run Debug",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            // https://code.visualstudio.com/docs/python/debugging#_purpose
+            "purpose": [
+                "debug-test"
+            ],
+            // https://docs.pytest.org/en/7.1.x/example/simple.html
+            "env": {
+                "PYTEST_ADDOPTS": "--no-cov --benchmark-skip"
+            }
+        }
+    ]
+}
