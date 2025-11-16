@@ -1,40 +1,17 @@
 [project]
-name = "PACKAGE_NAME"
+name = "samples-py"
 version = "0.1.0"
-authors = [{ name = "USERNAME" }]
-description = "PACKAGE_DESCRIPTION"
+authors = [{ name = "9506hqwy" }]
+description = "Python code samples."
 readme = "README.md"
 license = { file = "LICENSE" }
-classifiers = [
-  # https://pypi.org/classifiers/
-  "Development Status :: 1 - Planning",
-  "Programming Language :: Python :: 3",
-  "License :: OSI Approved :: MIT License",
-  "Operating System :: OS Independent",
-]
 requires-python = ">= 3.12"
 
 [project.urls]
-Homepage = "https://github.com/USERNAME/PACKAGE_NAME"
-
-[build-system]
-requires = ["uv_build>=0.9.0,<0.10.0"]
-build-backend = "uv_build"
+Homepage = "https://github.com/9506hqwy/samples-py"
 
 [dependency-groups]
-dev = ["mypy>=1.17.1", "pip-licenses>=5.0.0", "ruff>=0.12.11"]
-doc = ["sphinx>=8.2.3"]
-profile = ["gprof2dot>=2025.4.14", "memray>=1.18.0"]
-test = [
-  "pytest-benchmark>=5.1.0",
-  "pytest-cov>=6.2.1",
-  "pytest>=8.4.1",
-  "tox-uv>=1.28.0",
-  "tox>=4.29.0",
-]
-
-[tool.uv.build-backend]
-module-name = "example_lib"
+dev = ["mypy>=1.17.1", "ruff>=0.12.11"]
 
 [tool.mypy]
 # https://mypy.readthedocs.io/en/stable/config_file.html
@@ -51,11 +28,6 @@ warn_unused_ignores = true
 warn_no_return = true
 warn_return_any = true
 warn_unreachable = true
-
-[tool.pytest.ini_options]
-addopts = "--benchmark-skip"
-# occur `no-data-collected` at coverage if removed.
-pythonpath = "src"
 
 [tool.ruff]
 # relaxed line length
@@ -85,43 +57,3 @@ ignore = [
   "D203", # incorrect-blank-line-before-class (D203)
   "D213", # multi-line-summary-second-line (D213)
 ]
-
-[tool.ruff.lint.per-file-ignores]
-"test/*" = [
-  "S101", # assert (S101)
-  "D",    # pydocstyle (D)
-]
-
-[tool.tox]
-legacy_tox_ini = """
-[tox]
-env_list =
-  format
-  lint
-  type
-  py312
-  py313
-  py314
-
-[testenv]
-deps =
-  pytest
-  pytest-benchmark
-  pytest-cov
-commands =
-  pytest --cov-append --cov-branch --cov=src -v
-
-[testenv:format]
-commands =
-  uv format --check
-
-[testenv:lint]
-deps = ruff
-commands =
-  ruff check
-
-[testenv:type]
-deps = mypy
-commands =
-  mypy ./src
-"""
