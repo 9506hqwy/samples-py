@@ -1,0 +1,29 @@
+[project]
+name = "swig-minimum"
+version = "0.1.0"
+authors = [{ name = "9506hqwy" }]
+description = "SWIG minimum sample."
+readme = "README.md"
+requires-python = ">=3.12"
+
+[project.scripts]
+swig-minimum = "swig_minimum:main"
+
+# The uv build backend currently only supports pure Python code.
+# https://docs.astral.sh/uv/concepts/build-backend/
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+# Building Extension Modules
+# https://setuptools.pypa.io/en/latest/userguide/ext_modules.html
+#
+# experimental ?
+# https://github.com/pypa/setuptools/issues/5096
+#
+# Do not work expectedly.
+# Do not rebuild without file changed even if artifact does not exist.
+[[tool.setuptools.ext-modules]]
+name = "swig_minimum._arithmetic"
+sources = ["src/swig_minimum/arithmetic.c", "src/swig_minimum/arithmetic.i"]
+depends = ["src/swig_minimum/arithmetic.h"]

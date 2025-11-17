@@ -21,6 +21,9 @@
         },
         "editor.defaultFormatter": "charliermarsh.ruff"
     },
+    "python.analysis.ignore": [
+        "*"
+    ],
     "python.testing.pytestEnabled": true,
     "python.testing.unittestEnabled": false,
     "ruff.organizeImports": true

@@ -4,7 +4,7 @@ version = "0.1.0"
 authors = [{ name = "9506hqwy" }]
 description = "Python code samples."
 readme = "README.md"
-license = { file = "LICENSE" }
+license-files = ["LICENSE"]
 requires-python = ">= 3.12"
 
 [project.urls]
@@ -15,6 +15,7 @@ dev = ["mypy>=1.17.1", "ruff>=0.12.11"]
 
 [tool.mypy]
 # https://mypy.readthedocs.io/en/stable/config_file.html
+exclude_gitignore = true
 disallow_subclassing_any = true
 disallow_untyped_calls = true
 disallow_untyped_defs = true
@@ -57,3 +58,6 @@ ignore = [
   "D203", # incorrect-blank-line-before-class (D203)
   "D213", # multi-line-summary-second-line (D213)
 ]
+
+[tool.uv.workspace]
+members = ["swig/minimum"]

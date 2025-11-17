@@ -3,7 +3,7 @@ set -euo pipefail
 
 # Install dependencies
 sudo apt-get update -y
-sudo apt-get install -y graphviz shellcheck zstd
+sudo apt-get install -y graphviz python3-dev shellcheck swig zstd
 
 # Configuration PATH
 mkdir -p ~/.local/bin
@@ -60,7 +60,7 @@ chmod +x ~/.local/bin/yq
 curl -fsSL -o - "https://astral.sh/uv/install.sh" | sh
 
 # Setup environment
-uv sync --all-groups
+uv sync --all-groups --all-packages
 
 # Install python 3.13, 3.14
 uv python install 3.13 3.14
