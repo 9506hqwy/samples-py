@@ -1,0 +1,1 @@
+# SWIG Exception Sample

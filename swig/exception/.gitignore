@@ -1,0 +1,5 @@
+*.o
+*.so
+
+src/swig_exception/exception_wrap.cpp
+src/swig_exception/exception.py

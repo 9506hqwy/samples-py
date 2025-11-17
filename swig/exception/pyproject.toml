@@ -1,0 +1,25 @@
+[project]
+name = "swig-exception"
+version = "0.1.0"
+authors = [{ name = "9506hqwy" }]
+description = "SWIG exception sample."
+readme = "README.md"
+requires-python = ">=3.12"
+
+[project.scripts]
+swig-exception0 = "swig_exception:exception0"
+swig-exception1 = "swig_exception:exception1"
+swig-exception2 = "swig_exception:exception2"
+swig-exception3 = "swig_exception:exception3"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[[tool.setuptools.ext-modules]]
+name = "swig_exception._exception"
+sources = ["src/swig_exception/exception.cpp", "src/swig_exception/exception.i"]
+depends = ["src/swig_exception/exception.hpp"]
+# use Dynamic Exception Specification, so set C++11.
+extra-compile-args = ['-std=c++11']
+swig-opts = ['-c++']
