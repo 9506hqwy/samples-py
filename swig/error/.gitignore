@@ -1,0 +1,5 @@
+*.o
+*.so
+
+src/swig_error/error_wrap.c
+src/swig_error/error.py

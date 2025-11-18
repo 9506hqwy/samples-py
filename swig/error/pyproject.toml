@@ -1,0 +1,22 @@
+[project]
+name = "swig-error"
+version = "0.1.0"
+authors = [{ name = "9506hqwy" }]
+description = "SWIG error sample."
+readme = "README.md"
+requires-python = ">=3.12"
+
+[project.scripts]
+swig-error0 = "swig_error:error0"
+swig-error1 = "swig_error:error1"
+swig-error2 = "swig_error:error2"
+swig-error3 = "swig_error:error3"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[[tool.setuptools.ext-modules]]
+name = "swig_error._error"
+sources = ["src/swig_error/error.c", "src/swig_error/error.i"]
+depends = ["src/swig_error/error.h"]

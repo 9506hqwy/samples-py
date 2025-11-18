@@ -60,4 +60,4 @@ ignore = [
 ]
 
 [tool.uv.workspace]
-members = ["swig/exception", "swig/minimum"]
+members = ["swig/error", "swig/exception", "swig/minimum"]
