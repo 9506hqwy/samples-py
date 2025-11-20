@@ -1,0 +1,24 @@
+[project]
+name = "swig-libvirt"
+version = "0.1.0"
+authors = [{ name = "9506hqwy" }]
+description = "SWIG Libvirt sample."
+readme = "README.md"
+requires-python = ">=3.12"
+
+[project.scripts]
+swig-libvirt-version = "swig_libvirt:version"
+swig-libvirt-pool-events = "swig_libvirt:pool_events"
+swig-libvirt-pool-names = "swig_libvirt:pool_names"
+swig-libvirt-pools = "swig_libvirt:pools"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[[tool.setuptools.ext-modules]]
+name = "swig_libvirt._native"
+sources = ["src/swig_libvirt/native.i"]
+include-dirs = ["/usr/include/libvirt"]
+swig-opts = ["-I/usr/include/libvirt"]
+libraries = ["virt"]

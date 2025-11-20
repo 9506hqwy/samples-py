@@ -3,7 +3,7 @@ set -euo pipefail
 
 # Install dependencies
 sudo apt-get update -y
-sudo apt-get install -y graphviz python3-dev shellcheck swig zstd
+sudo apt-get install -y graphviz libvirt-dev python3-dev shellcheck swig zstd
 
 # Configuration PATH
 mkdir -p ~/.local/bin

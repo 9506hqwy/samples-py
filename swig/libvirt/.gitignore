@@ -1,0 +1,5 @@
+*.o
+*.so
+
+src/swig_libvirt/native_wrap.c
+src/swig_libvirt/native.py
