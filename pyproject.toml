@@ -66,5 +66,4 @@ members = [
   "swig/exception",
   "swig/libvirt",
   "swig/minimum",
-  "pandas",
 ]
