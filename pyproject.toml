@@ -60,4 +60,11 @@ ignore = [
 ]
 
 [tool.uv.workspace]
-members = ["swig/error", "swig/exception", "swig/libvirt", "swig/minimum"]
+members = [
+  "pandas/dataframe",
+  "swig/error",
+  "swig/exception",
+  "swig/libvirt",
+  "swig/minimum",
+  "pandas",
+]
