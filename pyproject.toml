@@ -63,6 +63,7 @@ ignore = [
 members = [
   "pandas/dataframe",
   "pywin32/security",
+  "pywin32/wmi",
   "swig/error",
   "swig/exception",
   "swig/libvirt",

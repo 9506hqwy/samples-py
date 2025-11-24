@@ -1,0 +1,19 @@
+[project]
+name = "pywin32-wmi"
+version = "0.1.0"
+authors = [{ name = "9506hqwy" }]
+description = "pywin32 wmi sample."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["pywin32>=311", "wmi>=1.5.1"]
+
+[project.scripts]
+pywin32-wmi-firewall-rules = "pywin32_wmi:firewall_rules"
+pywin32-wmi-programs = "pywin32_wmi:programs"
+
+[build-system]
+requires = ["uv_build>=0.9.11,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = ["types-pywin32>=311.0.0.20251008"]
