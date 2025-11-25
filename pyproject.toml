@@ -62,6 +62,7 @@ ignore = [
 [tool.uv.workspace]
 members = [
   "pandas/dataframe",
+  "pandas/merge",
   "pywin32/security",
   "pywin32/wmi",
   "swig/error",
