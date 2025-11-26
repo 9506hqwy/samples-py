@@ -1,0 +1,17 @@
+[project]
+name = "rich-live"
+version = "0.1.0"
+authors = [{ name = "9506hqwy" }]
+description = "rich live sample."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["rich>=14.2.0"]
+
+[project.scripts]
+rich-live-alt = "rich_live:alt"
+rich-live-iter = "rich_live:iter_render"
+rich-live-simple = "rich_live:simple"
+
+[build-system]
+requires = ["uv_build>=0.9.9,<0.10.0"]
+build-backend = "uv_build"
