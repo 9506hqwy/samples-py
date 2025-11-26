@@ -65,6 +65,7 @@ members = [
   "pandas/merge",
   "pywin32/security",
   "pywin32/wmi",
+  "rich/progress",
   "swig/error",
   "swig/exception",
   "swig/libvirt",

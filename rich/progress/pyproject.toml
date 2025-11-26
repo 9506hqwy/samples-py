@@ -1,0 +1,19 @@
+[project]
+name = "rich-progress"
+version = "0.1.0"
+authors = [{ name = "9506hqwy" }]
+description = "rich progress sample."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["rich>=14.2.0"]
+
+[project.scripts]
+rich-progress-iter-file = "rich_progress:iter_file"
+rich-progress-iter-range = "rich_progress:iter_range"
+rich-progress-layout = "rich_progress:layout"
+rich-progress-layout-table = "rich_progress:layout_table"
+rich-progress-simple = "rich_progress:simple"
+
+[build-system]
+requires = ["uv_build>=0.9.9,<0.10.0"]
+build-backend = "uv_build"
