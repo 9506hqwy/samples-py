@@ -8,9 +8,15 @@ requires-python = ">=3.12"
 dependencies = ["pandas[plot]>=2.3.3"]
 
 [project.scripts]
+pandas-df-column-add = "pandas_dataframe:column_add"
+pandas-df-columns = "pandas_dataframe:columns"
 pandas-df-condition = "pandas_dataframe:condition"
 pandas-df-groupby-datetime = "pandas_dataframe:groupby_datetime"
 pandas-df-groupby-value = "pandas_dataframe:groupby_value"
+pandas-df-pivot = "pandas_dataframe:pivot"
+pandas-df-select-index = "pandas_dataframe:select_index"
+pandas-df-select-name = "pandas_dataframe:select_name"
+pandas-df-statistics = "pandas_dataframe:statistics"
 
 [build-system]
 requires = ["uv_build>=0.9.9,<0.10.0"]
