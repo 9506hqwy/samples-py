@@ -10,7 +10,8 @@
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
     "mypy-type-checker.args": [
-        "--config-file=pyproject.toml"
+        "--config-file=pyproject.toml",
+        "--no-namespace-packages"
     ],
     "mypy-type-checker.importStrategy": "fromEnvironment",
     "mypy-type-checker.reportingScope": "workspace",

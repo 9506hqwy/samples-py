@@ -60,7 +60,7 @@ chmod +x ~/.local/bin/yq
 curl -fsSL -o - "https://astral.sh/uv/install.sh" | sh
 
 # Setup environment
-uv sync --all-groups --all-packages
+#uv sync --all-groups --all-packages
 
 # Install python 3.13, 3.14
 uv python install 3.13 3.14

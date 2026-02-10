@@ -13,5 +13,5 @@ rich-live-iter = "rich_live:iter_render"
 rich-live-simple = "rich_live:simple"
 
 [build-system]
-requires = ["uv_build>=0.9.9,<0.10.0"]
+requires = ["uv_build>=0.10.0,<0.11.0"]
 build-backend = "uv_build"
