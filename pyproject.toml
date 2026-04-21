@@ -61,13 +61,14 @@ ignore = [
 ]
 
 [tool.ruff.lint.per-file-ignores]
-"test/*" = [
+"**/test/*" = [
   "S101", # assert (S101)
   "D",    # pydocstyle (D)
 ]
 
 [tool.uv.workspace]
 members = [
+  "ctypes/groonga",
   "pandas/dataframe",
   "pandas/merge",
   "pywin32/security",
