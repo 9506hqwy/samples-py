@@ -12,7 +12,7 @@ requires-python = ">= 3.12"
 Homepage = "https://github.com/9506hqwy/samples-py"
 
 [dependency-groups]
-dev = ["mypy>=1.20.1", "ruff>=0.15.12"]
+dev = ["mypy>=1.20.2", "ruff>=0.15.12"]
 
 [tool.mypy]
 # https://mypy.readthedocs.io/en/stable/config_file.html
