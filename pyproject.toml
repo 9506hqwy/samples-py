@@ -69,6 +69,8 @@ ignore = [
 [tool.uv.workspace]
 members = [
   "ctypes/groonga",
+  "grpcio/client",
+  "grpcio/server",
   "pandas/dataframe",
   "pandas/merge",
   "pywin32/security",
