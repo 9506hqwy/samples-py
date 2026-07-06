@@ -5,7 +5,7 @@ authors = [{ name = "9506hqwy" }]
 description = "pandas dataframe sample."
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = ["pandas[plot]>=2.3.3"]
+dependencies = ["pandas[plot]>=3.0.3"]
 
 [project.scripts]
 pandas-df-column-add = "pandas_dataframe:column_add"
