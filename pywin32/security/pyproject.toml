@@ -5,7 +5,7 @@ authors = [{ name = "9506hqwy" }]
 description = "pywin32 security sample."
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = ["pywin32>=311"]
+dependencies = ["pywin32>=312"]
 
 [project.scripts]
 pywin32-security-file-dacl = "pywin32_security:file_dacl"

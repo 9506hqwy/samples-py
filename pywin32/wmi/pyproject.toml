@@ -5,7 +5,7 @@ authors = [{ name = "9506hqwy" }]
 description = "pywin32 wmi sample."
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = ["pywin32>=311", "wmi>=1.5.1"]
+dependencies = ["pywin32>=312", "wmi>=1.5.1"]
 
 [project.scripts]
 pywin32-wmi-firewall-rules = "pywin32_wmi:firewall_rules"
