@@ -5,7 +5,7 @@ authors = [{ name = "9506hqwy" }]
 description = "rich live sample."
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = ["rich>=14.2.0"]
+dependencies = ["rich>=15.0.0"]
 
 [project.scripts]
 rich-live-alt = "rich_live:alt"
