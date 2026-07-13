@@ -10,6 +10,6 @@ dependencies = ["grpcio>=1.82.1"]
 [dependency-groups]
 dev = [
   "grpcio-tools>=1.80.0",
-  "types-grpcio>=1.0.0.20260518",
+  "types-grpcio>=1.82.1.20260711",
   "types-protobuf>=7.34.1.20260518",
 ]
