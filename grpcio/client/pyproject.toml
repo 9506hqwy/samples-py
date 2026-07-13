@@ -5,7 +5,7 @@ authors = [{ name = "9506hqwy" }]
 description = "gRPC client sample."
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = ["grpcio>=1.80.0"]
+dependencies = ["grpcio>=1.82.1"]
 
 [dependency-groups]
 dev = [
