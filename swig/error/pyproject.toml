@@ -13,7 +13,7 @@ swig-error2 = "swig_error:error2"
 swig-error3 = "swig_error:error3"
 
 [build-system]
-requires = ["setuptools>=61"]
+requires = ["setuptools>=83.0.0"]
 build-backend = "setuptools.build_meta"
 
 [[tool.setuptools.ext-modules]]
