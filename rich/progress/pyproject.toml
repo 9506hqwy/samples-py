@@ -15,5 +15,5 @@ rich-progress-layout-table = "rich_progress:layout_table"
 rich-progress-simple = "rich_progress:simple"
 
 [build-system]
-requires = ["uv_build>=0.11.28,<0.12.0"]
+requires = ["uv_build>=0.11.29,<0.12.0"]
 build-backend = "uv_build"
