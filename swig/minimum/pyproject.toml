@@ -12,7 +12,7 @@ swig-minimum = "swig_minimum:main"
 # The uv build backend currently only supports pure Python code.
 # https://docs.astral.sh/uv/concepts/build-backend/
 [build-system]
-requires = ["setuptools>=61"]
+requires = ["setuptools>=83.0.0"]
 build-backend = "setuptools.build_meta"
 
 # Building Extension Modules
